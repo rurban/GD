@@ -2112,7 +2112,6 @@ gduseFontConfig(image,flag)
 #else
     PERL_UNUSED_ARG(flag);
     SV* errormsg;
-    PERL_UNUSED_ARG(image);
     errormsg = perl_get_sv("@",0);
     sv_setpv(errormsg,"libgd was not built with fontconfig support\n");
     XSRETURN_EMPTY;
